@@ -1,0 +1,29 @@
+.AddListing {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-translucent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 400px; /* Set a maximum width for the form container */
+    margin: 0 auto; /* Center the form */
+}
+
+.AddListingForm input[type="text"],
+.AddListingForm input[type="email"],
+.AddListingForm button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.AddListingForm button {
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    cursor: pointer;
+}
+
+.AddListingForm button:hover {
+    background-color: #0056b3; /* Button hover color */
+}

@@ -1,10 +1,12 @@
 .AddListing {
+    
     background-color: rgba(255, 255, 255, 0.9); /* Semi-translucent white background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
     max-width: 400px; /* Set a maximum width for the form container */
-    margin: 0 auto; /* Center the form */
+    margin: auto; /* Center the form */
+    margin-top: 10vh;
 }
 
 .AddListingForm input[type="text"],
@@ -16,14 +18,19 @@
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 .AddListingForm button {
-    background-color: #007bff; /* Button color */
+    background-color: #2596e1; /* Button color */
     color: #fff;
     cursor: pointer;
 }
 
 .AddListingForm button:hover {
-    background-color: #0056b3; /* Button hover color */
+    background-color: #2980b9; /* Button hover color */
+}
+
+.AddListingForm button:active {
+    box-shadow: inset 0 2px 30px rgba(0,0,0,0.3); /* Adjust the box shadow on click */
 }

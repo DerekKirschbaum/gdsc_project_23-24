@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { database }  from './firebase';
-import {ref, set, get, push} from 'firebase/database';
+import {ref, get, push} from 'firebase/database';
 import './styles.css';
 
 const AddListing = () =>{

@@ -1,11 +1,18 @@
+/*
+Styling for AddListing page
+*/
 .AddListing {
-    
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-translucent white background */
+
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-translucent white background */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    max-width: 400px; /* Set a maximum width for the form container */
-    margin: auto; /* Center the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    max-width: 400px;
+    /* Set a maximum width for the form container */
+    margin: auto;
+    /* Center the form */
     margin-top: 10vh;
 }
 
@@ -22,15 +29,65 @@
 }
 
 .AddListingForm button {
-    background-color: #2596e1; /* Button color */
+    background-color: #2596e1;
+    /* Button color */
     color: #fff;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .AddListingForm button:hover {
-    background-color: #2980b9; /* Button hover color */
+    background-color: #2980b9;
+    /* Button hover color */
 }
 
 .AddListingForm button:active {
-    box-shadow: inset 0 2px 30px rgba(0,0,0,0.3); /* Adjust the box shadow on click */
+    box-shadow: inset 0 2px 30px rgba(0, 0, 0, 0.3);
+    /* Adjust the box shadow on click */
+}
+
+/*
+Styling for Search page
+*/
+.Search {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 768px;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.SearchForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.SearchForm .Field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.SearchForm label,
+.SearchForm select,
+.SearchForm button {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.SearchForm select,
+.SearchForm button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.SearchForm button {
+    font-weight: bold;
+    min-width: 100px;
 }

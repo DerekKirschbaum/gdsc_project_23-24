@@ -3,8 +3,10 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      <h3>Home</h3>
-      <p>This is the home page.</p>
+      <p>
+        Welcome to [Insert name]! <a href="./SignIn">Sign in</a> or <a href="./Register">Register</a> to 
+        find or add new off-campus housing listings!
+      </p>
     </div>
   );
 }

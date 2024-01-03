@@ -60,13 +60,17 @@ const handleSubmit = async (e) => {
 }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label for="email">Email:</label><br/>
-      <input type="email" id="email" name="email" onChange={handleChange}/><br/>
-      <label for="password">Password:</label><br/>
-      <input type="text" id="password" name="password" onChange={handleChange}/><br/>
-      <button type="Submit">Submit</button>
-    </form>
+    <div className='Register'>
+        <p>Please fill in your information.</p>
+    
+        <form onSubmit={handleSubmit} className='AddListingForm'>
+        <input type="email" id="email" name="email" onChange={handleChange} placeholder='Email'/>
+        <input type="text" id="password" name="password" onChange={handleChange} placeholder='Password'/>
+        <input type="text" id="school" name="school" onChange={handleChange} placeholder='School'/>
+        <input type="text" id="name" name="name" onChange={handleChange} placeholder='Full Name'/>
+        <button type="Submit">Submit</button>
+        </form>
+    </div>
   )
 }
 

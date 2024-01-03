@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div>
       <p>
-        Welcome to [Insert name]! <a href="./SignIn">Sign in</a> or <a href="./Register">Register</a> to 
+        Welcome to HomeHeaven! <a href="./SignIn">Sign in</a> or <a href="./Register">Register</a> to 
         find or add new off-campus housing listings!
       </p>
     </div>

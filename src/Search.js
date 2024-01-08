@@ -69,6 +69,7 @@ const Search = () => {
                 </div>
             </form>
         </div>
+        // TODO: Use an API to keep track of this for all colleges instead of hard coding
     );
 }
 export default Search;

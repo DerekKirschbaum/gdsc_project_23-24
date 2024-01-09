@@ -3,7 +3,6 @@ import { database }  from './firebase';
 import {ref, get, push} from 'firebase/database';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import './styles.css';
-import './CollegeListAPI';
 
 const auth = getAuth();
 
@@ -11,6 +10,7 @@ const SignIn = () => {
 
   return (
     <div className='SignIn'>
+      <h3><b>Sign In</b></h3>
       <p>Please enter your email and password.</p>
 
       <form className='AddListingForm'>

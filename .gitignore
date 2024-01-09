@@ -23,3 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 /src/firebase.js
 /src/CollegeListAPI.js
+/src/Search.js

@@ -16,6 +16,7 @@ setFormData({ ...formData, [e.target.name]: e.target.value });
 const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email) {
+        alert('Please fill in all fields.');
         console.error('Name or email is missing.');
         return;
     }
@@ -61,6 +62,7 @@ const handleSubmit = async (e) => {
 
   return (
     <div className='Register'>
+        <h3><b>Register</b></h3>
         <p>Please fill in your information.</p>
     
         <form onSubmit={handleSubmit} className='AddListingForm'>

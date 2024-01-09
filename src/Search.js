@@ -1,5 +1,5 @@
 import React from 'react';
-import './CollegeListAPI';
+
 
 const Search = () => {
     return (
@@ -9,7 +9,7 @@ const Search = () => {
             <form className='SearchForm'>
                 <div className='Field'>
                     <label for="location">Location</label>
-                    <select name="locations" id="location">
+                    <select name="locations" id="location" onChange={displayMap}>
                         <option value="select" disabled>Select college and city</option>
                         <optgroup label="Cal Poly San Luis Obispo">
                             <option value="any">Cal Poly SLO</option>
@@ -67,9 +67,41 @@ const Search = () => {
                 <div className='Field'>
                     <button className='ToggleFilters'>More Filters</button>
                 </div>
+                <div>
+                    <button className='SubmitSearch' onClick={displayMap}>Submit</button>
+                </div>
             </form>
+            <div className='Map' id='map'>
+                {/* Default option for selection */}
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.0391111229765!2d-120.665074488386!3d35.30500965043493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ecf1b4054c3551%3A0x98b3b48a29d99103!2sCalifornia%20Polytechnic%20State%20University!5e0!3m2!1sen!2sus!4v1704758297839!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
         </div>
-        // TODO: Use an API to keep track of this for all colleges instead of hard coding
     );
 }
+
+const displayMap = () => {
+    let location = document.getElementById('location').value;
+    let link;
+    switch (location) {
+        case 'Cal Poly SLO':
+            link = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.0391111229765!2d-120.665074488386!3d35.30500965043493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ecf1b4054c3551%3A0x98b3b48a29d99103!2sCalifornia%20Polytechnic%20State%20University!5e0!3m2!1sen!2sus!4v1704758297839!5m2!1sen!2sus";
+            break;
+        case 'San Luis Obispo':
+            break;
+        case 'Grover Beach':
+            break;
+        case 'UCSB':
+            link = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13165.553873823337!2d-119.8468037!3d34.4168864!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e93f67f3314b37%3A0x4e956b7e5cb6cec2!2sUniversity%20of%20California%2C%20Santa%20Barbara!5e0!3m2!1sen!2sus!4v1704756987025!5m2!1sen!2sus";
+            break;
+        case 'Santa Barbara':
+            break;
+        case 'Goleta':
+            break;
+        case 'Isla Vista':
+            break;
+    }
+    document.getElementById('map').innerHTML = <iframe src={link} width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>;
+}
+
 export default Search;

@@ -1,7 +1,7 @@
 /*
 Styling for AddListing page
 */
-.AddListing {
+.AddListing, .Register, .SignIn {
 
     background-color: rgba(255, 255, 255, 0.9);
     /* Semi-translucent white background */
@@ -90,4 +90,16 @@ Styling for Search page
 .SearchForm button {
     font-weight: bold;
     min-width: 100px;
+}
+
+.SubmitSearch {
+    background-color: #2596e1;
+}
+
+/* Optional: Makes the sample page fill the window. */
+.Map {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border:0;
 }
